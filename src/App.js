@@ -40,6 +40,7 @@ componentDidMount(){
         {items.map(crazy =>(
         <li className="myList"> key ={crazy.id} {crazy.first_name} |
         Email: {crazy.email} | Avatar: {crazy.avatar}
+        <img src={crazy.avatar} alt="Avatar"/>
         </li>
       ))};
 
