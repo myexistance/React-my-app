@@ -11,15 +11,18 @@ constructor (props){
   }
 }
 componentDidMount(){
-  fetch('https://my.api.mockaroo.com/react.json?key=b42cf6b0')
+  fetch('https://my.api.mockaroo.com/person.json?key=64782ac0')
   .then(res=>res.json())
   .then(json=>{
     this.setState({
       isLoaded:true,
       items:json
+
     })
   })
+
 }
+
 
 
 
@@ -42,14 +45,12 @@ componentDidMount(){
 
       </ul>
 
+
       </div>
     );
-    }
-    }
+   }
   }
-
-
-
+}
 
 
 
